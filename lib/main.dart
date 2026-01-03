@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'screens/input_screen.dart';
 import 'package:emailjs/emailjs.dart' as emailjs;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() {
+  dotenv.load(fileName: ".env");
   emailjs.init(
     const emailjs.Options(
       publicKey: 'D4KNNO_67cy9aKy51',
